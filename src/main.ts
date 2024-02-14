@@ -16,6 +16,8 @@ async function bootstrap() {
 
   app.useGlobalFilters(new NotFoundExceptionFilter());
 
-  await app.listen(3000);
+  const port = 3000;
+  await app.listen(port);
+  console.log(`nestjs project started url => localhost:${port}`);
 }
 bootstrap();

@@ -1,7 +1,7 @@
 import { IsEmail } from "class-validator";
 import { BeforeInsert, Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import * as argon2 from 'argon2';
-import { Article } from "src/article/entities/article.entity";
+import { Article } from "../../article/entities/article.entity";
 
 @Entity()
 export class User {
